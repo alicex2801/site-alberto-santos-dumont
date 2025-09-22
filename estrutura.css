@@ -1,0 +1,268 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f2f5f8;
+  color: #222;
+  line-height: 1.6;
+  padding-top: 150px; /* espaço para navbar fixa */
+}
+
+/* Navbar */
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #004a99;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  z-index: 1000;
+}
+
+.navbar {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  padding: 5px 15px;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: bold;
+  font-size: 1.8rem;
+  color: #fff;
+}
+
+.logo-img {
+  width: 100px;
+  height: auto;
+}
+
+.school-name {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: 1px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 18px;
+}
+
+.nav-links li a {
+  color: #ddd;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: #fff;
+}
+
+/* Hamburger */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+}
+.hamburger span {
+  display: block;
+  height: 3px;
+  width: 25px;
+  background: #fff;
+  border-radius: 2px;
+}
+
+/* Main content */
+main {
+  max-width: 1000px;
+  margin: 0 auto 50px;
+  padding: 0 15px;
+}
+
+.item {
+  display: flex;
+  flex-direction: column-reverse; /* texto em cima, imagens embaixo */
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 60px;
+  gap: 20px;
+  background: #fff;
+  border-radius: 8px;
+  padding: 25px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.6s ease-out;
+  will-change: transform, opacity;
+  text-align: center;
+}
+
+.item.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.item img {
+  width: 320px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+  flex-shrink: 0;
+}
+
+.text {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.text h2 {
+  color: #004a99;
+  margin-bottom: 12px;
+  font-size: 1.8rem;
+}
+
+.text p {
+  font-size: 1.1rem;
+  color: #333;
+  line-height: 1.5;
+}
+
+/* ===============================
+   Image gallery ajustada
+   =============================== */
+.image-gallery {
+  display: flex;
+  flex-direction: column; /* todas as imagens em coluna */
+  gap: 15px; /* espaço entre as imagens */
+  align-items: center; /* centraliza horizontalmente */
+  margin-top: 15px; /* distância do texto */
+}
+
+.image-gallery img {
+  width: 100%;       /* ocupa toda largura disponível */
+  max-width: 320px;  /* limite de largura */
+  height: auto;      /* mantém proporção */
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.image-gallery img:hover {
+  transform: scale(1.05); /* efeito leve ao passar o mouse */
+}
+
+/* Botão voltar ao topo */
+#topBtn {
+  position: fixed;
+  bottom: 35px;
+  right: 35px;
+  display: none;
+  background: #004a99;
+  color: white;
+  border: none;
+  padding: 15px 18px;
+  font-size: 22px;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+  transition: background 0.3s ease;
+  z-index: 1001;
+}
+
+#topBtn:hover {
+  background: #002f60;
+}
+
+/* Footer */
+footer {
+  background: #004a99;
+  color: #ddd;
+  text-align: center;
+  padding: 18px 15px;
+  font-size: 1rem;
+  letter-spacing: 0.03em;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .nav-links {
+    flex-direction: column;
+    width: 100%;
+    display: none;
+    margin-top: 10px;
+  }
+  .nav-links.active {
+    display: flex;
+  }
+  .hamburger {
+    display: flex;
+  }
+  .item {
+    flex-direction: column-reverse; /* mantém texto em cima no mobile também */
+  }
+  .item img {
+    width: 100%;
+    height: auto;
+  }
+  .text {
+    max-width: 100%;
+  }
+  .image-gallery {
+    justify-content: center;
+  }
+}
+
+/* Evitar scroll quando lightbox aberto */
+body.no-scroll {
+  overflow: hidden;
+}
+
+/* Lightbox */
+#image-overlay {
+  display: none;
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.8);
+  justify-content: center; align-items: center;
+  z-index: 2000;
+}
+#image-overlay img {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+#image-overlay button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  user-select: none;
+}
+#image-overlay button#prev { left: 30px; }
+#image-overlay button#next { right: 30px; }

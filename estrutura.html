@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escola Estadual Alberto Santos Dumont</title>
+    <link rel="shortcut icon" href="./assets/Projeto Remover fundo.png" type="image/x-icon"> <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="shortcut icon" href="#" type="image/x-icon">
+    <link href='https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <link rel="stylesheet" href="./Inicio/style.css">
+    <link rel="stylesheet" href="./estrutura.css">
+    
+</head>
+<body>
+
+<header>
+        <button class="hamburguer" id="hamburguer">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <div class="logo-central">
+            <img src="./assets/Projeto Remover fundo.png" alt="Símbolo da escola" />
+        </div>
+
+        <h1 class="nome-escola">E.E. Alberto Santos Dumont</h1>
+
+        <nav class="menu-topo">
+            <ul>
+                <li><a href="#inicio"><i class='bx bx-home'></i> Início</a></li>
+                <li><a href="#sobre"><i class='bx  bx-book'></i> Sobre a Escola</a></li>
+                <li><a href="#endereco"><i class="fa-regular fa-map"></i>  Endereço</a></li>
+                <li><a href="#regimento"><i class="fa-regular fa-file"></i>   Regimento</a></li>
+            </ul>
+        </nav>
+
+        <nav id="menu-lateral">
+            <ul>
+            <li><a href="#auditorio">Auditório</a></li>
+        <li><a href="#quadras">Quadras</a></li>
+        <li><a href="#salas">Salas</a></li>
+        <li><a href="#laboratorio">Laboratório</a></li>
+        <li><a href="#biblioteca">Biblioteca</a></li>
+        <li><a href="#informatica">Informática</a></li>
+        <li><a href="#refeitorio">Refeitório</a></li>
+        <li><a href="#cursos">Cursos Técnicos</a></li>
+            </ul>
+
+            <!-- Botão de tema dentro do menu -->
+            <div class="theme-switch-container">
+                <label class="theme-switch">
+                    <input type="checkbox" id="toggle-theme">
+                    <span class="slider"></span>
+                    <span class="theme-label" id="theme-label">Modo Escuro</span>
+                </label>
+            </div>
+        </nav>
+
+    </header>
+
+<main>
+  <!-- Seções do site -->
+  <section id="auditorio" class="item fade-in">
+    <img src="assets/Captura-de-Tela-_12_.svg" alt="Auditório da escola" />
+    <div class="text">
+      <h2>Auditório</h2>
+      <p>Há na instituição um auditório multifuncional, destinado a apresentações culturais, palestras, reuniões e eventos diversos...</p>
+    </div>
+  </section>
+
+  <section id="quadras" class="item reverse fade-in">
+    <img src="assets/quadra3.jpg" alt="Quadra esportiva da escola" />
+    <img src="assets/quadra2.jpg" alt="Quadra esportiva da escola" />
+    <img src="assets/quadra1.jpg" alt="Quadra esportiva da escola" />
+
+    <div class="text">
+      <h2>Quadras Esportivas</h2>
+      <p>Nossa estrutura esportiva oferece três quadras esportivas que atendem às atividades de Educação Física...</p>    
+    </div>
+  </section>
+
+  <section id="salas" class="item fade-in">
+    <img src="salas.jpg" alt="Salas de aula" />
+    <div class="text">
+      <h2>Salas de Aula</h2>
+      <p>São disponibilizadas 20 salas de aula ativas, utilizadas diariamente para as aulas regulares...</p>
+    </div>
+  </section>
+
+  <section id="laboratorio" class="item reverse fade-in">
+    <img src="assets/laboratorio 1.jpeg" alt="Laboratório de química e ciências" />
+    <img src="assets/laboratorio2.jpeg" alt="Laboratório de química e ciências" />
+    <div class="text">
+      <h2>Laboratório de Química e Ciências</h2>
+      <p>O prédio abriga um laboratório de Química e Ciências, equipado com todos os materiais necessários...</p>
+    </div>
+  </section>
+
+  <section id="biblioteca" class="item fade-in">
+    <img src="assets/biblioteca 1.jpeg" alt="Biblioteca da escola" />
+     <img src="assets/biblioteca 2.jpeg" alt="Biblioteca da escola" />
+      <img src="assets/biblioteca 3.jpeg" alt="Biblioteca da escola" />
+    <div class="text">
+      <h2>Biblioteca</h2>
+      <p>A escola conta com uma biblioteca equipada com um vasto acervo de livros, periódicos e recursos digitais...</p>
+    </div>
+  </section>
+
+  <section id="informatica" class="item fade-in">
+    <div class="image-gallery">
+      <img src="assets/informatica 1.jpeg" alt="Sala de informática 1" />
+      <img src="assets/informatica 2.jpeg" alt="Sala de informática 2" />
+      <img src="assets/informatica 1.jpeg" alt="Sala de informática 3" />
+    </div>
+    <div class="text">
+      <h2>Sala de Informática</h2>
+      <p>Os espaços de informática oferecem salas modernas, equipadas com computadores conectados à internet...</p>
+    </div>
+  </section>
+
+  <section id="refeitorio" class="item reverse fade-in">
+    <img src="assets/cantina tias.jpeg" alt="Refeitório e cantina" />
+     <img src="assets/refeitorio.jpeg" alt="Refeitório e cantina" />
+    <div class="text">
+      <h2>Refeitório e Cantina</h2>
+      <p>O refeitório é um ambiente amplo e bem organizado, onde os alunos podem realizar suas refeições...</p>
+    </div>
+  </section>
+
+  <section id="cursos" class="item fade-in">
+    <img src="assets/sala ads.jpeg" alt="Cursos técnicos" />
+    <h1>Sala de Análise e Desenvolvimento de Sistemas</h1>
+     <img src="assets/adm.jpeg" alt="Cursos técnicos" />
+    <h1>Sala de Administração</h1>
+    <div class="text">
+      <h2>Cursos Técnicos</h2>
+      <p>Em 2023, a escola deu início aos cursos técnicos nas áreas de Administração e Análise e Desenvolvimento de Sistemas...</p>
+    </div>
+  </section>
+</main>
+
+<button id="topBtn" title="Voltar ao topo">↑</button>
+
+ <footer id="contato">
+        <div class="footer-conteudo">
+            <img src="./assets/Projeto Remover fundo.png" alt="Logo da Escola" class="footer-logo">
+            <h3 class="footer-nome">E.E. Alberto Santos Dumont</h3>
+
+            <div class="footer-links">
+                <a href="tel:+551636303424"><i class='bx bx-phone'></i> (16) 3630-3424</a>
+                <a href="https://www.instagram.com/escola.asd/" target="_blank">
+                    <i class='bx bxl-instagram'></i> @escola.asd
+                </a>
+            </div>
+        </div>
+        <p class="direitos">© 2025 E.E. Alberto Santos Dumont - Todos os direitos reservados</p>
+    </footer>
+
+<script src="./Inicio/script.js"></script>
+</body>
+</html>

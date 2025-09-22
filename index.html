@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escola Estadual Alberto Santos Dumont</title>
+    <link rel="shortcut icon" href="./assets/Projeto Remover fundo.png" type="image/x-icon"> <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="shortcut icon" href="#" type="image/x-icon">
+    <link href='https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <link rel="stylesheet" href="./Inicio/style.css">
+    
+</head>
+
+<!-- Botão de voltar ao topo -->
+<button id="btn-topo" title="Voltar ao topo">
+  <i class='bx bx-up-arrow-alt'></i>
+</button>
+
+<body>
+    <header>
+        <button class="hamburguer" id="hamburguer">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <div class="logo-central">
+            <img src="./assets/Projeto Remover fundo.png" alt="Símbolo da escola" />
+        </div>
+
+        <h1 class="nome-escola">E.E. Alberto Santos Dumont</h1>
+
+        <nav class="menu-topo">
+            <ul>
+                <li><a href="#inicio"><i class='bx bx-home'></i> Início</a></li>
+                <li><a href="#sobre"><i class='bx  bx-book'></i> Sobre a Escola</a></li>
+                <li><a href="#endereco"><i class="fa-regular fa-map"></i>  Endereço</a></li>
+                <li><a href="#regimento"><i class="fa-regular fa-file"></i>   Regimento</a></li>
+            </ul>
+        </nav>
+
+        <nav id="menu-lateral">
+            <ul>
+                <li><a href="https://site1.com" target="_blank">Início</a></li>
+                li><a href="./estrutura.html" target="_blank">Estrutura</a></li>
+                <li><a href="https://site1.com" target="_blank">Itinerários</a></li>
+                <li><a href="https://site2.com" target="_blank">Esporte</a></li>
+                <li><a href="https://site3.com" target="_blank">Eventos</a></li>
+                <li><a href="https://site3.com" target="_blank">Fundadores</a></li>
+            </ul>
+
+            <!-- Botão de tema dentro do menu -->
+            <div class="theme-switch-container">
+                <label class="theme-switch">
+                    <input type="checkbox" id="toggle-theme">
+                    <span class="slider"></span>
+                    <span class="theme-label" id="theme-label">Modo Escuro</span>
+                </label>
+            </div>
+        </nav>
+
+    </header>
+
+    <main>
+
+  <!-- Capa fullscreen -->
+  <section class="hero" id="inicio">
+  <img src="assets/3992217.webp" alt="Banner" class="hero-img">
+
+  <div class="hero-overlay">
+    <h2>Bem-vindo ao Alberto Santos Dumont!</h2>
+    <p>Compromisso com educação de qualidade e formação cidadã</p>
+    <a href="#sobre" class="hero-btn">Saiba Mais</a>
+  </div>
+</section>
+
+
+  <!-- Sobre a Escola -->
+  <section class="about" id="sobre">
+    <div class="about-content">
+      <img src="assets/escola_ribeirao2.webp" alt="Foto da Escola">
+      <div class="about-text">
+        <h3>Sobre a Escola</h3>
+
+        <p>A Escola Estadual Alberto Santos Dumont, tradicional em Ribeirão Preto, é muito mais do que uma instituição de ensino: é um espaço de histórias, amizades e conquistas que marcaram gerações de estudantes. Reconhecida pela qualidade de seu trabalho pedagógico, a escola alia tradição e inovação para formar cidadãos críticos, responsáveis e preparados para os desafios do mundo contemporâneo.
+
+        <p>Com uma proposta diversificada, a escola oferece tanto o itinerário formativo normal, que valoriza a base acadêmica e o desenvolvimento integral do estudante, quanto o itinerário técnico, voltado para a qualificação prática e profissional, ampliando as possibilidades de inserção no mercado de trabalho.</p>
+
+        <p>Aqui, cada estudante encontra oportunidades de aprender, compartilhar experiências e crescer com o apoio dos professores, funcionários e da comunidade escolar. Nosso compromisso é preparar os jovens para o futuro, sem abrir mão dos valores que nos unem e fortalecem no presente.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contato -->
+  <section class="contact" id="endereco">
+    <!-- <h3>Contato</h3> -->
+    <div class="contact-boxes">
+      <!-- Endereço agora é link -->
+      <a href="https://www.google.com/maps/place/R.+S%C3%A3o+Salvador,+176+-+Sumarezinho,+Ribeir%C3%A3o+Preto+-+SP,+14055-260" 
+         target="_blank" 
+         class="contact-box">
+        <h4>📍 Endereço</h4>
+        <p>São Salvador, 176 - Sumarezinho, Ribeirão Preto - SP, 14055-260</p>
+      </a>
+    </div>
+
+    <!-- Mapa -->
+    <div class="map-container">
+      <a href="https://www.google.com/maps/place/R.+S%C3%A3o+Salvador,+176+-+Sumarezinho,+Ribeir%C3%A3o+Preto+-+SP,+14055-260" target="_blank">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3695.314386750818!2d-47.82733482398788!3d-21.18645048049259!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94b9be2c28a47f7f%3A0x40d7ad9d5b2e0b33!2sR.%20S%C3%A3o%20Salvador%2C%20176%20-%20Sumarezinho%2C%20Ribeir%C3%A3o%20Preto%20-%20SP%2C%2014055-260!5e0!3m2!1spt-BR!2sbr!4v1713405000000!5m2!1spt-BR!2sbr" 
+          width="100%" 
+          height="300" 
+          style="border:0;" 
+          allowfullscreen="" 
+          loading="lazy" 
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </a>
+    </div>
+  </section>
+
+  <!-- Regimento Escolar -->
+  <section class="regimento" id="regimento">
+    <h3>Regimento Escolar</h3>
+    
+    <p>
+      O Regimento Escolar da E.E Alberto Santos Dumont é o documento que orienta o funcionamento da escola, definindo regras de convivência, direitos e deveres de estudantes, professores e funcionários. Ele busca garantir uma organização justa e transparente, valorizando o respeito, a disciplina e a participação de toda a comunidade escolar.
+    </p>
+
+    <div class="btn-center">
+      <a href="assets/REGIMENTO ESCOLAR 2025.pdf" target="_blank" class="btn-regimento"> <i class="fa-regular fa-file-pdf"></i> Abrir Regimento em PDF</a>
+    </div>
+  </section>
+</main>
+
+    <footer id="contato">
+        <div class="footer-conteudo">
+            <img src="./assets/Projeto Remover fundo.png" alt="Logo da Escola" class="footer-logo">
+            <h3 class="footer-nome">E.E. Alberto Santos Dumont</h3>
+
+            <div class="footer-links">
+                <a href="tel:+551636303424"><i class='bx bx-phone'></i> (16) 3630-3424</a>
+                <a href="https://www.instagram.com/escola.asd/" target="_blank">
+                    <i class='bx bxl-instagram'></i> @escola.asd
+                </a>
+            </div>
+        </div>
+        <p class="direitos">© 2025 E.E. Alberto Santos Dumont - Todos os direitos reservados</p>
+    </footer>
+</body>
+
+<script src="./Inicio/script.js"></script>
+
+</html>
